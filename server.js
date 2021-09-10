@@ -4,7 +4,7 @@ const tinyURL = require("tinyurl");
 const cors = require("cors");
 const path = require("path");
 const app = express();
-const port = 3004;
+const port = 3005;
 
 app.use(express.static(path.join(__dirname, "static")));
 app.use(bodyParser.urlencoded({extended:true}));
