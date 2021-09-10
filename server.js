@@ -29,7 +29,8 @@ app.post("/", (req, res) => {
     }, (error) => {
         console.error(error);
         res.render("failure", {
-            error: `We were unable to shorten your URL (${url})`
+            error: `We were unable to shorten your URL (${url})`,
+            url: url
         });
     });
 });
