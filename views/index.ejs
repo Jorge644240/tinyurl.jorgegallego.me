@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="URL Shortener">
+        <meta name="author" content="Jorge Gallego">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>URL Shortener</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body>
+        <h1>URL Shortener</h1>
+        <% if (shortenedUrl !== "") { %>
+            <p>Link to <span><%= url.split("/")[2] %></span> successfully shortened: <a href="<%= shortenedUrl %>" target="_blank"><%= shortenedUrl %></a></p>
+        <% } %>
+        <aside class="center">
+            <form method="POST">
+                <label for="url">URL:</label>
+                <br>
+                <input type="url" name="url" id="url" required>
+                <br>
+                <button>Shorten URL</button>
+            </form>
+        </aside>
+        <p class="credits">Powered by <a href="https://tinyurl.com" target="_blank">TinyURL</a></p>
+        <script src="/js/index.js"></script>
+    </body>
+</html>

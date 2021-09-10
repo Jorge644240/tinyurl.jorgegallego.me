@@ -1,0 +1,27 @@
+{
+  "name": "tinyurl",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jorge644240/tinyurl.jorgegallego.me.git"
+  },
+  "author": "Jorge Gallego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jorge644240/tinyurl.jorgegallego.me/issues"
+  },
+  "homepage": "https://github.com/Jorge644240/tinyurl.jorgegallego.me#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "tinyurl": "^1.1.7"
+  }
+}
