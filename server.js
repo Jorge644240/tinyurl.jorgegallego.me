@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
     });
 });
 
-app.post("/", (req, res) => {
-    const url = req.body.url;
+app.get("/shorten", (req, res) => {
+    const url = req.query.url;
     tinyURL.shorten(url)
     .then((response) => {
         const shortenedUrl = response;
