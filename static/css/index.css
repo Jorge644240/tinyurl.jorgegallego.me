@@ -71,3 +71,17 @@ body.dark form > button
     width: 100%;
     text-align: center;
 }
+@media screen and (max-width: 800px)
+{
+    form > input
+    {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    form > input
+    {
+        width: 80%;
+    }
+}
